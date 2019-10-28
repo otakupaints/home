@@ -14,240 +14,322 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="google-site-verification" content="bPiwLPX_2hidP7pVHb9C6zNccvnQ_nQGnFR0If_lk3s" />
         <meta http-equiv=”Content-Language” content=”es”/>
-        <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="icon" href="logo.ico">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    </head>
+<body>      
         
-        <style>
-            * {
-                margin:20px;
-            }
-            .contenedor {
-                margin-top: 150px;
-            }
-               .nav li ul li {
-    position:relative;
-   }
-   
-            .ampliar {
-                background-color: lightsalmon;
-            }
-            .descargar {
-                background-color: lightseagreen;
-            }
+    
+            <header>
+                <div class="contenedor1">
+                 <div class="options">
+                  <nav>
+                      <ul>
+                          <li> 
+                             <a class="button1" >&#x2699;&#xFE0F;</a>
+                              <ul>
+                                 <div class="darkmode-button">
+                                  <li>
+                                      <input type="button" title="&#x1F4A1;" id="darkmode" onclick="document.documentElement.classList.toggle('darkmode')">	
+                                  </li>
+                                  </div>
+                                  
+                              </ul>
+                            </li>
+                      </ul>
+                      
+                  </nav>
+                </div>
+                   
+                    <div class="title"><br><br><h1>Otaku<br>     Paints</h1><li><a class="upload" href="https://otakupaints.github.io/subir">Subir dibujo</a></li></div>
+                    <div class="buscador"><input type="text" id="input-search" placeholder=" Buscar"></div>
+                    </div>
+            <div class="contenedor">
+            <div class="content-search">
+            <div class="content-table">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </thead>    
+                        
+                    <tbody>
+                        <tr>
+                            <td><div class="contenedorimg"><a href="https://otakupaints.github.io/draw/bellion1.html">  bellion nanatsu  no taizai  </div><br><img src="imagenes/bellion.png" alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <td><div class="contenedorimg"><a href="https://otakupaints.github.io/draw/crow1.html">  crow brawl  stars <p></p></div><br><img src="imagenes/crow.png" alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <td><div class="contenedorimg"><a href="https://otakupaints.github.io/draw/elizabeth1.html">  elizabeth nanatsu no taizai <p></p> </div><br><img src="imagenes/elizabeth.png" alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <td><div class="contenedorimg"><a href="https://otakupaints.github.io/draw/goku1.html">  goku dragon  ball <p></p> </div><br><img src="imagenes/goku.png" alt=""></a></td>
+                        </tr>
+                        <tr>  
+                            <td><div class="contenedorimg"><a href="https://otakupaints.github.io/draw/chrome1.html">  chrome doctor  dr stone <p></p>  </div><br><img src="imagenes/chrome.png" alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <td><div class="contenedorimg"><a href="https://otakupaints.github.io/draw/natsu1.html">  natsu fairy  tail  <p></p></div><br><img src="imagenes/natsu.png" alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <td><div class="contenedorimg"><a href="https://otakupaints.github.io/draw/arion1.html">  arion inazuma  eleven go  <p></p></div><br><img src="imagenes/arion.png" alt=""></a></td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+                </div>
+        </div>
+           
             
-            .ampliar:hover {
-                background-color: darkorange;
-            }
-            .descargar:hover {
-                background-color: mediumseagreen;
-            }
-    #header {
-    margin-top:30px;
-    width:500px;
-    font-family:Arial, Helvetica, sans-serif;
-    float: left;
+            
+  </div>     </header>     
+         <script src="js/jquery.js"></script>   
+         <script src="js/jquery.dataTables.min.js"></script>   
+         <script src="js/search.js"></script>   
+    </body>
+    <style>
+        .upload {
+            color: black;
+            min-width: 10%;
+            min-height: 40%;
+            max-height: 11%;
+            max-width: 11%;
+                
+        }
         
-   }
-
-   ul, ol {
-    list-style:none;
-   }
-
-   
-   .nav li a {
-    background-color: gold;
-    color:#fff;
-    text-decoration:none;
-    padding:10px 12px;
-    display:block;
-   }
-   
-   .nav li a:hover {
-    background-color:palegoldenrod;
-   }
-
-   .nav li ul {
+        .options li a:hover {
+            background-color: dimgrey;
+            height: auto;
+            min-height: 70px;
+            max-width: 60px; 
+        }
+        
+        
+        #darkmode {
+            background-color: #006184;
+            min-height: 10px;
+            max-height: 20px;
+            height: 2%;
+            width: 5%;
+            max-width: 25px;
+            min-width: 15px;
+            margin: 0;
+            position: relative;
+            top: -15px;
+        }
+        html.darkmode #darkmode {
+            background-color: #fff714;
+        }
+        .options {
+            position: absolute;
+            left:3S%;
+            max-width: 10%;
+            max-height: 15%;
+        }
+   nav li ul {
     display:none;
     position:absolute;
     min-width:500px;
    }
    
-   .nav li:hover > ul {
+   nav li:hover > ul {
     display:block;
    }
-   
-   .nav li img ul li img {
-    position:relative;
-   }
-   
-   .nav li ul li ul {
-    top:0;
-    top:50px;
-   }
-        </style>
-        
-        <style>
-
-            @font-face{
-                font-family:fuente1;
-                src: url(fuente.ttf);
-            }
-                
-              * {
-                  font-family: fuente1;
-              }
-              
-              
-    
-    * {
-        margin: 1px;
-        padding: 0px;
-    }
-    
-    img {
-        width: 50%;
-        height: 50%;
-        object-fit: contain;
-        align-items: center
-        margin: 50px;
-    }
-    
-
         body {
-	margin:10;
-	font-family: monospace;
-}
-
-h3 {
-	color: #fff;
-	text-align: center;
-    font-size: 300%;
-
-}
-
-
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul class="menu">
-                    <li><a href="https://otakupaints.github.io">Inicio</a></li>
-                    <li><a href="https://otakupaints.github.io/subir">Subir dibujo</a></li>
-                </ul>
-            </nav>
-        </header>
-            <div class="title"><br><br><h1>Otaku<br>     Paints</h1></div>
+            overflow-y: hidden;
+        }
         
-        <ul class="galeria">
-            <div id="header">
-                <ul class="nav">
-                    <div class="contenedor">              
-                        <li><a id="bellion"><img src="imagenes/bellion.png" alt="bellion" width="20%" height="20%"></a>
-                            <ul>
-                                <li><a class="ampliar" href="https://otakupaints.github.io/dibujos#bellion">Ver en grande</a></li>
-                                <li><a class="descargar" href="imagenes/bellion.png" download>Descargar</a></li>
-                            </ul>
-                        </li>
-                    </div>
-
-                    <div class="contenedor">      
-                        <li><a id="crow"><img src="imagenes/crow.png" alt="Crow" width="20%" height="20%"></a>
-                            <ul>
-                                <li><a class="ampliar" href="https://otakupaints.github.io/dibujos#crow">Ver en grande</a></li>
-                                <li><a class="descargar" href="imagenes/crow.png" download>Descargar</a></li>
-                            </ul>
-                    </li>
-                    </div>
-
-                    <div class="contenedor">    
-                        <li><a id="elizabethliones"><img src="imagenes/elizabeth.png" alt="Elizabeth Liones"  width="20%" height="20%"></a>
-                            <ul>
-                                <li><a href="https://otakupaints.github.io/dibujos#elizabethliones">Ver en grande</a></li>
-                                <li><a class="descargar" href="imagenes/elizabeth.png" download>Descargar</a></li>
-                            </ul>
-                        </li>
-                    </div>
-
-                    <div class="contenedor">  
-                        <li><a id="goku"><img src="imagenes/goku.png" alt="Goku"  width="20%" height="20%"></a>
-                            <ul>
-                                <li><a href="https://otakupaints.github.io/dibujos#goku">Ver en grande</a></li>
-                                <li><a class="descargar" href="imagenes/goku.png" download>Descargar</a></li>
-                            </ul>
-                        </li>
-                    </div>
-
-                    <div class="contenedor">  
-                        <li><a id="natsudragneel"><img src="imagenes/natsu.png" alt="Natsu"  width="20%" height="20%"></a>
-                            <ul>
-                                <li><a href="https://otakupaints.github.io/dibujos#natsudragneel">Ver en grande</a></li>
-                                <li><a class="descargar" href="imagenes/natsu.png" download>Descargar</a></li>
-                            </ul>
-                        </li>
-                    </div>
-
-                    <div class="contenedor">     
-                        <li><a id="chromedrstone"><img src="imagenes/chrome.png" alt="Chrome"  width="20%" height="20%"></a>
-                            <ul>
-                                <li><a href="https://otakupaints.github.io/dibujos#chromedrstone">Ver en grande</a></li>
-                            <li><a class="descargar" href="imagenes/chrome.png" download>Descargar</a></li>
-                            </ul>
-                        </li>
-                    </div>
-
-                    <div class="contenedor">
-                        <li><a id="arionsherwind"><img src="imagenes/arion.png" alt="Arion"  width="20%" height="20%"></a>
-                            <ul>
-                                <li><a href="https://otakupaints.github.io/dibujos#arionsherwind">Ver en grande</a></li>
-                                <li><a class="descargar" href="imagenes/arion.png" download>Descargar</a></li>
-                            </ul>
-                        </li>
-                    </div>
-
-                    <div class="contenedor">                   
-                        <li><a><img src="imagenes/deku.png" alt="Deku"  width="20%" height="20%"></a>
-                            <ul>
-                                <li><a href="https://otakupaints.github.io/dibujos#deku">Ver en grande</a></li>
-                                <li><a class="descargar" href="imagenes/deku.png" download>Descargar</a></li>
-                            </ul>
-                        </li>
-                    </div>
-
-                    <div class="contenedor">
-                        <li><a><img src="imagenes/melodias.png" alt="Meliodas"  width="20%" height="20%"></a>
-                            <ul>
-                                <li><a href="https://otakupaints.github.io/dibujos#meliodas">Ver en grande</a></li>
-                                <li><a class="descargar" href="imagenes/melodias.png" download>Descargar</a></li>
-                            </ul>
-                    </li>
-                    </div>
-
-                    </ul>
-            </div>
-    </body>
-    <style>
+        
+        .contendorimg {
+            display: none;
+        } 
+        
+        
+        #table_filter {
+            display: none;
+        }
+        #table_length {
+            display: none;
+        }
+        #table_paginate {
+            display: none;
+        }
+        .dataTables_info {
+            margin: 10px;
+            margin-top: 
+        }
+        .buscador {
+            border: 10px;
+            margin: 0px;
+        }
+        
+        .content-table {
+            overflow-y: visible;
+            overflow-x: hidden;
+        }
+        td {
+            margin-top: 40px;
+            position: relative;
+            width: 40%;
+            height: 30%;
+            left: 25%;
+            max-height: 110px;
+            max-width: 300px;
+            margin: 0;
+            
+        }
         a {
-                font-family: fuente1;
-            }
-        .contenedorimg img{
-            background-color: snow;
-            border: 50px;
+            color: black;
+            background-color: skyblue;
+            position: relative;
+            
+            right:25%;
         }
-        .contenedorimg li a{
-            background-color: orange;
-            background-size: 150%;
+        a:hover > img {
+            max-width: 25%;
+            max-height: 15%;
+            width: auto;
+            height: auto;
+            font-size: +20;
+             color: black;
+            background-color: deepskyblue;
         }
-        .contenedorimg div img{
-            border: 20%;
-            border-color: aqua;
-            border-bottom: 10%;
-            border-bottom-color: orangered;
+        a img:hover {
+            max-width: 25%;
+            max-height: 15%;
+            width: auto;
+            height: auto;
+            color: black;
+            margin: auto;
+            background-color: deepskyblue;
         }
-    
-        .contenedorimg li{
-            background-color: palevioletred;
-            background-size: 150%;
+        @font-face{
+            font-family: fuente1;
+            src: url(fuente.ttf);
+         }
+        .title {
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: lightcyan;
+            
         }
+        .title a {
+            position: absolute;
+            right: 5px;
+            top: 16px;
+            list-style: none;
+            text-decoration: none;
+            color: white;
+            font-size: 50%;
+            width: 6%;
+            height: 6%;
+            background-color:deepskyblue;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;  
+        }
+        .title a:hover {
+            background-color:dodgerblue;
+            font-size: 20.5px;
+
+        }
+        * {
+            margin: 5px;
+            padding: 0px;
+            font-size: 24px;
+            font-family: 'Indie Flower', cursive;
+            list-style: none;
+            text-decoration: none;
+        }
+        ul, ol {
+            list-style:none;
+        }
+        body {
+            background-image: linear-gradient(deepskyblue,gold,deepskyblue);
+            background-repeat:repeat;
+            font-family: 'Indie Flower', cursive;
+            text-decoration:none;
+        }
+        ul, ol {
+            list-style:none;
+        }
+        .buscador {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: lightcyan;
+        }
+
+        img {
+            max-height: 20%;
+            max-width: 10%;
+            width: auto;
+            height: auto;
+            background-color: aliceblue;
+            margin: 10px;
+            border-spacing: 10px;
+        }
+        .contenedor {
+            background-color: aliceblue;
+            margin: auto;
+            width: 90%;
+            margin-top:0px;
+            max-width: 800px;
+            max-height: 50px;
+            min-height: 80%;
+            position: relative;
+            top: -34px;
+            
+            overflow-y: visible;
+            overflow-x: hidden;
+        }
+        
+        .dataTables_empty {
+            display: none;
+        }
+        
+        .contenedor1 {
+            margin: auto;
+            width: 90%;
+            max-width: 800px;
+            max-height: 200px;
+            min-width: 333px;
+            min-height: 200px;
+            border: 10px;
+            position: relative;
+            top: 35px;
+
+        }
+        .contenedorimg {
+            display: none;
+            margin:0px;
+        }
+        /*--DARK MODE--*/
+        
+        html.darkmode {
+            color: white;
+        }
+        
+        
+        html.darkmode .contenedor {
+            background-color: darkslategrey;
+        }
+        html.darkmode .title {
+            background-color: darkcyan;
+        }
+        html.darkmode .buscador {
+            background-color:darkcyan;
+            color: aqua;
+        }
+        
+        
     </style>
 </html>
